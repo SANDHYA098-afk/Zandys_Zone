@@ -30,7 +30,7 @@ const Feedback = () => (
             <p className="mt-[24px] lg:text-[18px] text-[12px] font-bold text-white">
                ~ Harvard's cs50AI </p>
 
-                <a className="text-blue" href="https://cs50.harvard.edu/certificates/4d3724e7-cd63-4b46-8b19-47285ae1269d">|LINK|</a>
+                <a className="text-blue" href="https://www.linkedin.com/posts/sandhiya-sl-149569291_itookcs50-activity-7353743939520094208-kDnU?utm_source=share&utm_medium=member_android&rcm=ACoAAEa9b4kBWjouaT69boEysXg-JM4duBJy2Dk">|LINK|</a>
 
             <p className="mt-[24px] lg:text-[18px] text-[12px] font-bold text-white">
               ~ Responsive Web Design by freeCodeCamp
