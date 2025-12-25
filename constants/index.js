@@ -21,7 +21,7 @@ export const exploreWorlds = [
     id: 'world-4',
     imgUrl: '/proj4.jpeg',
     title: 'This Portfolio Website',
-    link: { text: '|LINK| ', href: '/link' },
+    link: { text: '|LINK| ', href: 'https://694d45ef57fa5016a656aa3d--zandyszone.netlify.app/' },
   },
  
 ];
