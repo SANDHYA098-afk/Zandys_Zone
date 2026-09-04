@@ -24,7 +24,7 @@ const GetStarted = () => (
         variants={planetVariants('left')}
         className={`flex-1 ${styles.flexCenter}`}>
 
-          <img src="/academics.png" alt="get-started" className="w-[90%] h-[90%] object-contain" />
+          <img src="/academics.png" alt="get-started" className="w-[70%] max-w-[300px] lg:w-[90%] lg:max-w-none h-auto object-contain" />
 
 
           </motion.div>
@@ -35,7 +35,7 @@ const GetStarted = () => (
 
             <TypingText title="| Academics" />
 
-            <TitleText title={<>Pre-Final Year Bachelor of Engineering</>} />
+            <TitleText title={<>Final Year Bachelor of Engineering</>} />
 
             <p className="text-white">in Computer Science and Engineering (B.E. CSE)</p>
 

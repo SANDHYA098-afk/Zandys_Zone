@@ -21,17 +21,20 @@ const World = () => (
 
         <TitleText title={<>Some of my sketches</>} textStyles="text-center" />
 
+        {/* Width drives height so every sketch stays whole at any screen size.
+            The source was cropped to even 16px margins — its canvas used to be
+            1920x1080 with the art sitting 83px left of centre. */}
         <motion.div
           variants={fadeIn('up', 'tween', 0.2, 1)}
-          className="relative mt-[68px] flex w-full h-[600px]">
+          className="relative mt-10 sm:mt-[68px] w-full">
 
-          <img src="/gallery.png" alt="map" className="w-full h-full object-cover" />
-
-          <div className="absolute bottom-20 right-10 w-[150px] h-[150px] p-[6px] rounded-full bg-[#5d6680]">
-            <img src="newStamp2.png" alt="people" className="w-full h-full" />
-          </div>
-
-          
+          <img
+            src="/gallery.png"
+            width={1591}
+            height={921}
+            alt="A page of pencil and ink sketches: a Buddha study, a ship's anchor, and several anime character portraits."
+            className="w-full h-auto rounded-[16px] sm:rounded-[24px]"
+          />
 
         </motion.div>
 

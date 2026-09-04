@@ -8,6 +8,8 @@ import styles from '../styles';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 import { newFeatures } from '../constants';
 
+// col-reverse puts the image above the text on phones, while the row at lg
+// keeps the desktop arrangement of text on the left and image on the right.
 const WhatsNew = () => (
   <section className={`${styles.paddings} relative z-10`} >
     <motion.div
@@ -15,7 +17,7 @@ const WhatsNew = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
+      className={`${styles.innerWidth} mx-auto flex flex-col-reverse lg:flex-row gap-8`}
       >
 
         
@@ -46,7 +48,7 @@ const WhatsNew = () => (
         variants={planetVariants('right')}
         className={`flex-1 ${styles.flexCenter}`}>
 
-          <img src="/beyond.png" alt="get-started" className="w-[90%] h-[90%] object-contain" />
+          <img src="/beyond.png" alt="" className="w-[70%] max-w-[300px] lg:w-[90%] lg:max-w-none h-auto object-contain" />
 
 
           </motion.div>

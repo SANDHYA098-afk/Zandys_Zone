@@ -1,0 +1,1526 @@
+# ZANDY'S ZONE — 2026 GAMIFIED PORTFOLIO SPECIFICATION
+
+> **Purpose:** Master content, UX, visual, interaction, and implementation brief for the redesigned personal portfolio of Sandhiya ("Zandy").
+>
+> This document is intended to be used as the primary context when designing/building the new portfolio.
+
+---
+
+# 01. PORTFOLIO IDENTITY
+
+## Name
+
+**Sandhiya**
+
+## Personal Brand
+
+**Zandy's Zone**
+
+## Academic Identity
+
+**Computer Science and Engineering Student**
+
+> Important: The portfolio must identify Sandhiya as a **Computer Science student / Computer Science and Engineering student**. Do not replace this with ECE.
+
+## Core Personal Philosophy
+
+**Learning. Breaking. Building.**
+
+The portfolio should communicate someone who learns by experimenting, building projects, breaking things, understanding why they broke, and rebuilding them better.
+
+The new portfolio should feel like an evolution of the original Zandy's Zone rather than a generic developer portfolio.
+
+---
+
+# 02. CORE EXPERIENCE DIRECTION
+
+## Main Concept
+
+The entire portfolio should feel like a **personal video game / interactive digital world**.
+
+This is NOT a conventional portfolio with a game-themed color palette.
+
+The **entire user journey** should feel gamified:
+
+- Loading screen
+- Navigation
+- Hero
+- About
+- Skills
+- Experience
+- Projects
+- Achievements
+- Certifications
+- Art
+- Social/contact
+- Transitions
+- Footer/end state
+
+Every part should contribute to the same game-like universe.
+
+## Core feeling
+
+The visitor should feel like they have entered:
+
+> **Zandy's Zone — a small playable/explorable universe containing my work, skills, experiences, achievements and art.**
+
+The portfolio should be:
+
+- Interactive
+- Animated
+- Playful
+- Futuristic
+- Space-themed
+- Gamified
+- Personal
+- Recruiter-friendly
+- Readable
+- Fast enough to remain practical
+
+The gamification must enhance the portfolio rather than make it difficult to use.
+
+---
+
+# 03. VISUAL THEME
+
+## Color Direction
+
+Use a **space-inspired color palette**.
+
+Possible visual ingredients:
+
+- Deep space / near-black backgrounds
+- Dark navy / midnight blue
+- Cosmic purple
+- Neon blue
+- Neon violet
+- Subtle pink/magenta accents where useful
+- White/light text for readability
+- Small glowing highlights
+
+The final palette should feel like:
+
+> **deep space + futuristic game interface**
+
+Avoid making every element glow heavily.
+
+The interface should have a hierarchy:
+
+- Dark environment
+- Bright interactive elements
+- Subtle stars/particles
+- Controlled neon highlights
+- Strong contrast for readable text
+
+## Visual Atmosphere
+
+Possible visual elements:
+
+- Stars
+- Nebula-like gradients
+- Small planets
+- Orbits
+- Constellation lines
+- Holographic panels
+- Game HUD elements
+- Mission markers
+- Coordinates
+- XP/badge-inspired elements
+- Sci-fi interface details
+- Subtle particle movement
+
+These should support the experience without overwhelming the content.
+
+---
+
+# 04. SPA REQUIREMENT
+
+The website must be a **Single Page Application (SPA)** for now.
+
+The entire experience should flow within one page.
+
+Do not turn the main sections into separate conventional pages.
+
+Possible navigation:
+
+**Game Menu → Section**
+
+The page can still use:
+
+- Scroll-based navigation
+- Smooth scrolling
+- Horizontal scrolling
+- Section transitions
+- Modal/detail overlays
+- Expandable project information
+- Interactive cards
+- Animated scene changes
+
+The experience should remain cohesive.
+
+---
+
+# 05. LOADING SCREEN
+
+## Concept
+
+The loading screen must have a short animated story.
+
+### Required animation
+
+A **UFO appears/flys in**.
+
+Then:
+
+> **Someone/character falls down from the UFO.**
+
+The character lands.
+
+Then the loading completes and the portfolio/game world opens.
+
+Conceptually:
+
+```text
+          🛸
+        UFO
+         ↓
+     character
+         ↓
+      falls
+         ↓
+       lands
+         ↓
+   LOADING COMPLETE
+         ↓
+      GAME MENU
+```
+
+The exact character design can be decided later.
+
+## Character
+
+Preferred:
+
+- An animated character
+- Space/adventure/game-like appearance
+
+The character may be:
+
+1. A supplied image/asset provided later
+2. A custom animated character created through CSS/SVG/code
+3. Another lightweight visual solution
+
+The animation should be lightweight enough not to make the initial load unnecessarily slow.
+
+## Loading UI
+
+Possible supporting elements:
+
+- Loading percentage
+- "Entering Zandy's Zone..."
+- Small system messages
+- Progress indicator
+- Stars/particles
+
+Do not make the loading screen excessively long.
+
+---
+
+# 06. GAME MENU / NAVIGATION
+
+## Important Requirement
+
+Do NOT use a conventional portfolio navbar.
+
+Instead, navigation should look like a **game menu**.
+
+Possible title:
+
+> **GAME MENU**
+
+or
+
+> **ZANDY'S MENU**
+
+or another suitable in-universe term.
+
+## Main navigation destinations
+
+The menu should include:
+
+1. **Lobby**
+2. **Skills**
+3. **Experience** — final gamified name to be decided
+4. **Projects**
+5. **Achievements** — final gamified name can be decided
+6. **Certifications**
+7. **Carbon Copies of My Sketchbook**
+8. **Connect With Me**
+
+The exact wording of the gamified alternatives can be finalized later.
+
+## Navigation behavior
+
+The menu should:
+
+- Feel like a game UI
+- Animate when opened/closed
+- Clearly show the active section
+- Support smooth navigation
+- Remain usable on mobile
+- Avoid confusing recruiters
+- Preserve accessibility
+
+---
+
+# 07. LOBBY
+
+The **Lobby** replaces the conventional "Home" section.
+
+It is the main entry point after the loading sequence.
+
+## Lobby contents
+
+The Lobby should contain:
+
+### A. Animated Hero
+
+The hero should introduce Sandhiya immediately.
+
+It should communicate:
+
+- Name
+- Developer identity
+- Computer Science student identity
+- Main technical interests
+- Personal personality
+
+Possible information structure:
+
+```text
+SANDHIYA
+aka ZANDY
+
+Computer Science Student
+Software Developer / Builder
+
+AI × Full Stack × Web
+
+[ Enter / Explore ]
+```
+
+The exact wording is NOT final.
+
+## Hero animation
+
+The hero must feel alive.
+
+Possible elements:
+
+- Character/avatar
+- Floating space objects
+- Stars
+- Planet/orbit animation
+- HUD-style information
+- Cursor/interaction effects
+- Floating code fragments
+- Subtle camera movement/parallax
+
+---
+
+# 08. LOBBY — ABOUT ME
+
+The About section should expand naturally from the Hero.
+
+Do NOT use a generic "About Me" block with one dense paragraph.
+
+The writing must preserve the style of the old portfolio:
+
+- Personally curated
+- Short paragraphs
+- Intentional line breaks
+- Natural rhythm
+- Human
+- Slightly playful
+- Easy to scan
+
+The content should tell the story of:
+
+- Being a Computer Science student
+- Getting deeply interested in software
+- Learning by building
+- Exploring web development
+- Exploring AI
+- Building projects
+- Learning through experimentation
+- Continuing to discover what to build next
+
+The About section should feel like the player is learning who the person behind the avatar is.
+
+---
+
+# 09. LOBBY — EXTRACURRICULAR / PERSONAL SIDE
+
+The Lobby should also include the things that make Sandhiya more than a developer.
+
+Possible content:
+
+## NCC
+
+Important context:
+
+- Naval Wing NCC
+- Leadership
+- Discipline
+- Teamwork
+- Camp experiences
+- Open-sea sailing expedition
+- Best Cadet of the Camp
+- Leading Cadet / Petty Officer Cadet
+
+## Art
+
+- Sketching
+- Anime/cartoon drawing
+- Creative work
+
+## Events
+
+- Hackathons
+- Competitions
+- Technical events
+- YUCI/event involvement
+
+This can be represented through small interactive game-like "character stats", "inventory", "side quests", or other visual concepts.
+
+Do not make it look like a normal resume subsection.
+
+---
+
+# 10. OPTIONAL CHARACTER / AVATAR
+
+An animated character on the side of the Lobby/Hero would be desirable.
+
+Priority:
+
+### Option 1
+Use a character image/asset supplied later.
+
+### Option 2
+Create a character through CSS/SVG/code.
+
+### Option 3
+Use another lightweight animated avatar representation.
+
+The character should feel integrated into the space/game world.
+
+It should NOT look like an unrelated stock illustration.
+
+---
+
+# 11. SKILLS
+
+## Section Concept
+
+The Skills section should show the **current technology stack**.
+
+The presentation should be gamified rather than a static list of logos.
+
+Possible concepts:
+
+- Skill inventory
+- Character skill tree
+- Tech loadout
+- Equipment screen
+- Skill cards
+- Technology planets
+- Unlockable-style categories
+
+The exact interaction is to be decided during visual planning.
+
+## Current stack from the provided resume
+
+### Languages
+
+- Python
+- JavaScript
+- HTML/CSS
+
+### Frontend
+
+- React.js
+- Next.js
+- Tailwind CSS
+
+### Backend
+
+- FastAPI
+- Flask
+
+### Cloud & DevOps
+
+- AWS
+- Git
+- GitHub
+- Hugging Face
+- Vercel
+- Netlify
+
+## Project-specific technologies that should also be represented where appropriate
+
+From the current resume/projects:
+
+- Three.js
+- AWS Lambda
+- API Gateway
+- DynamoDB
+- S3
+- Cognito
+- TypeScript
+- Groq
+- FAISS
+- Sentence Transformers
+- LangChain
+- PostgreSQL
+- Bandit
+- SSE
+
+Do not necessarily show every technology with equal importance.
+
+The final Skills UI should communicate actual capability and current usage rather than become a technology wall.
+
+---
+
+# 12. EXPERIENCE — GAMIFIED MAP / PATH
+
+## Core requirement
+
+The Experience section must NOT look like a conventional vertical resume timeline.
+
+It should be designed as a **path on a map**.
+
+Think:
+
+> **Adventure map / mission map / campaign map**
+
+The visitor follows a path and reaches different experience nodes.
+
+Concept:
+
+```text
+START
+  ●
+   \
+    ● NeuroStack
+     \
+      \
+       ● YUCI
+        \
+         ● CURRENT
+```
+
+The actual path can be more visually creative.
+
+## Experience node behavior
+
+Each experience can be represented as:
+
+- Map location
+- Mission
+- Checkpoint
+- Planet
+- Station
+- Quest
+- Destination
+
+Clicking/tapping a node should reveal:
+
+- Organization
+- Role
+- Dates
+- Description
+- Technologies
+- What was built
+- Key responsibilities
+
+## Experience 01 — NeuroStack
+
+### Role
+
+**SDE I Intern | NeuroStack**
+
+### Dates
+
+**Mar 2026 – Jul 2026**
+
+### Resume content
+
+- Developed and deployed client-facing web applications using Next.js and Three.js, contributing to frontend implementation, animations, and production deployment.
+- Built and deployed a complete serverless application using AWS Lambda and API Gateway, integrating DynamoDB, S3, and Cognito for data storage, file management, and authentication.
+
+### Key technologies
+
+- Next.js
+- Three.js
+- AWS Lambda
+- API Gateway
+- DynamoDB
+- S3
+- Cognito
+
+This experience should visually feel like the first major mission/checkpoint on the map.
+
+---
+
+# 13. EXPERIENCE 02 — YOUTH UNITED COUNCIL OF INDIA
+
+### Role
+
+**Web Development Intern | Youth United Council of India (YUCI)**
+
+### Dates
+
+**Jul 2026 – Present**
+
+### Resume content
+
+- Developed and maintained production web applications using Next.js and React.js, contributing to four major platforms:
+  - Youth United Festival 2026
+  - YUCI Organization
+  - World Youth Book of Records
+  - Asia's University Ranking
+- Implemented responsive web interfaces and email integrations, while managing domain configuration, hosting, server connectivity, and production deployment to ensure reliable website performance and availability.
+
+### Key technologies
+
+- Next.js
+- React.js
+- Responsive UI
+- Email integrations
+- Domain configuration
+- Hosting
+- Server connectivity
+- Production deployment
+
+This should be the latest/current destination on the experience map.
+
+---
+
+# 14. PROJECTS
+
+## Requirement
+
+The portfolio will feature **four important projects**.
+
+The project section should be interactive and visually engaging.
+
+Each project should have:
+
+- Project title
+- Short description
+- Image/visual area
+- Technology stack
+- Live link icon
+- GitHub/repository icon where applicable
+- Expandable or detailed view
+- Animation/interaction
+
+## Project image requirement
+
+There must be **dedicated space for project images/screenshots**.
+
+Do not design project cards assuming text only.
+
+The implementation should reserve an intentional image area such as:
+
+```text
+┌─────────────────────────────┐
+│                             │
+│       PROJECT IMAGE         │
+│        / PREVIEW            │
+│                             │
+├─────────────────────────────┤
+│ PROJECT TITLE               │
+│ Description                 │
+│ Tech stack                  │
+│              ↗ Live   ↗ Git │
+└─────────────────────────────┘
+```
+
+The exact layout can vary.
+
+---
+
+# 15. PROJECT 01 — REACHCRAFT
+
+## Title
+
+**ReachCraft — AI Agent for Content Strategy Optimization**
+
+## Resume description
+
+Developed an AI agent system for content strategy generation using a multi-stage pipeline for decision-making, simulation, and feedback-driven refinement.
+
+## Tech Stack
+
+- React
+- FastAPI
+- LangChain
+- Groq
+- Python
+- Vercel
+
+## Portfolio presentation
+
+Treat this as an AI/agentic project.
+
+Possible game classification:
+
+> **AI QUEST**
+
+or another suitable in-universe label.
+
+Include:
+
+- Project image
+- Short readable description
+- Technology badges
+- Live icon
+- GitHub icon if repository is available
+- Expandable project details
+
+---
+
+# 16. PROJECT 02 — NOTESTACK
+
+## Title
+
+**NoteStack — Serverless Notes & File Sharing Platform**
+
+## Resume description
+
+Developed a serverless notes and file-sharing platform with authentication, CRUD operations, search, sharing, notifications, and event-driven workflows.
+
+## Tech Stack
+
+- Next.js
+- AWS Lambda
+- API Gateway
+- DynamoDB
+- S3
+- Cognito
+- TypeScript
+- Vercel
+
+## Portfolio presentation
+
+This should be presented as a complete serverless application.
+
+Possible game classification:
+
+> **SERVERLESS MISSION**
+
+Include:
+
+- Project image
+- Architecture visual if available
+- Live link icon
+- GitHub icon if available
+- Technology badges
+- Expandable details
+
+---
+
+# 17. PROJECT 03 — NEUROCOPILOT
+
+## Title
+
+**NeuroCopilot — AI-Powered RAG Chatbot**
+
+## Resume description
+
+Built a RAG-based chatbot using Groq LLM with vector search (FAISS) and FastAPI backend for context-aware, retrieval-augmented responses.
+
+## Tech Stack
+
+- Next.js
+- FastAPI
+- Python
+- Groq
+- FAISS
+- Sentence Transformers
+- Tailwind
+- Netlify
+
+## Portfolio presentation
+
+This should visually communicate:
+
+- AI
+- Retrieval
+- Knowledge
+- Search
+- Context
+- LLM
+
+Possible game classification:
+
+> **AI INTELLIGENCE MISSION**
+
+Include:
+
+- Project image
+- Optional architecture/RAG pipeline visual
+- Live link icon
+- GitHub icon if available
+- Technology badges
+- Expandable details
+
+---
+
+# 18. PROJECT 04 — DEVCOUNCIL AI
+
+## Title
+
+**DevCouncil AI — Multi-Agent AI Engineering Team**
+
+## Tech Stack
+
+- Next.js
+- FastAPI
+- Groq / Llama-3.3-70B
+- PostgreSQL
+- Bandit
+- SSE
+
+## Description
+
+Developed a multi-agent AI system where specialized agents analyze GitHub repositories for architecture, security, and code quality, using real-time SSE communication, Bandit-based security analysis, and consensus-driven decision making.
+
+## Core concepts
+
+- Multi-agent AI
+- Specialized agents
+- Architecture analysis
+- Security analysis
+- Code quality review
+- GitHub repository analysis
+- Real-time communication
+- SSE
+- Bandit security analysis
+- Consensus-driven decision making
+
+## Portfolio presentation
+
+This should be one of the strongest featured projects.
+
+Possible game classification:
+
+> **BOSS MISSION / DEV COUNCIL**
+
+The exact label can be decided later.
+
+Include dedicated space for:
+
+- Project image
+- Architecture diagram / system visual
+- Live link icon
+- GitHub icon
+- Technology badges
+- Detailed interactive view
+
+---
+
+# 19. PROJECT LINKS / ICON REQUIREMENT
+
+For projects, use **icons** for links instead of large text buttons whenever appropriate.
+
+Required visual affordances:
+
+- Live project icon
+- GitHub/repository icon
+- Optional external-link icon
+
+Examples:
+
+```text
+[ ↗ ] Live
+[ GitHub icon ] Source
+```
+
+Or preferably icon-first UI integrated into the game interface.
+
+The live-link icon must be clearly understandable.
+
+---
+
+# 20. PROJECT IMAGES
+
+Every featured project should have a planned visual/image area.
+
+Possible assets:
+
+- Screenshot of the application
+- UI preview
+- Hero screenshot
+- Architecture diagram
+- Custom project artwork
+- Animated preview/GIF where appropriate
+
+The design should support different image aspect ratios without breaking the layout.
+
+Do not force project images into tiny thumbnails.
+
+---
+
+# 21. ACHIEVEMENTS — GAMIFIED SECTION
+
+The achievements section should feel like a **game achievement/badge system**.
+
+Possible names:
+
+- Achievements
+- Badges
+- Unlocked
+- Hall of Fame
+- Milestones
+- Trophies
+
+Final gamified naming can be decided later.
+
+## Current planned count
+
+**3 achievements**
+
+## Verified achievement from the provided resume
+
+### Global Rank 51–100 — HACKHAZARDS '26 | NAMESPACE Community
+
+Resume description:
+
+> Ranked among the Top 100 projects out of 2,600+ submissions in a global hackathon with 31,000+ registered builders.
+
+This should be presented as a prominent unlocked achievement/badge.
+
+## Remaining two achievement slots
+
+The provided resume image only exposes the first achievement before the image ends.
+
+Therefore, **do not invent the other two achievements**.
+
+When the full resume content is available, add the two verified entries here.
+
+---
+
+# 22. CERTIFICATIONS
+
+Certifications should also be presented in a gamified style.
+
+Possible concepts:
+
+- Certificates as collectible cards
+- Achievement scrolls
+- Skill unlocks
+- Credential inventory
+- Mission rewards
+
+## Certification 01
+
+### Code in Place 2026 — Stanford University
+
+Description:
+
+Completed a foundational Python programming course covering:
+
+- Control flow
+- Loops
+- Console programming
+- Graphics
+- Lists
+- Dictionaries
+- Core programming concepts
+- Final project
+
+Include:
+
+**VIEW ↗** icon/link.
+
+---
+
+# 23. CERTIFICATION 02
+
+### CS50's Introduction to Artificial Intelligence with Python — Harvard University
+
+Description:
+
+Completed coursework covering:
+
+- Search algorithms
+- Knowledge representation
+- Machine learning
+- Neural networks
+- 12 hands-on AI programming projects
+
+Include:
+
+**VIEW ↗** icon/link.
+
+---
+
+# 24. CERTIFICATION 03
+
+### NPTEL Python for Data Science — IIT Madras
+
+Description:
+
+Earned an Elite certification upon completing coursework covering:
+
+- Python programming
+- Data analysis
+- NumPy
+- Pandas
+- Data visualization
+- Foundational data science concepts
+
+If a certificate link is available, include a **VIEW ↗** icon.
+
+---
+
+# 25. CERTIFICATION 04
+
+### Responsive Web Design — freeCodeCamp
+
+Description:
+
+Built responsive websites using:
+
+- HTML5
+- CSS3
+- Flexbox
+- Grid
+
+Completed 5 practical web design projects focused on layouts adaptable across devices.
+
+Include:
+
+**VIEW ↗** icon/link.
+
+---
+
+# 26. CERTIFICATION LINK ICONS
+
+Certification entries must have a clear **certificate/view icon**.
+
+Do not use a large conventional button unless needed.
+
+Preferred:
+
+- External-link icon
+- Arrow icon
+- Certificate icon
+- Hover tooltip such as "View Certificate"
+
+Every certificate that has an actual URL should expose that URL through the icon.
+
+---
+
+# 27. ART SECTION
+
+## Required title
+
+**Carbon Copies of My Sketchbook**
+
+This title should be used as the conceptual identity of the art section.
+
+## Concept
+
+The section should feel like opening/exploring a physical sketchbook inside the game world.
+
+Do NOT use a standard image grid.
+
+## Required interaction
+
+On scrolling into the art section, the experience should transition into a **horizontal scrolling sequence**.
+
+Concept:
+
+```text
+VERTICAL PAGE SCROLL
+        ↓
+   ART TRANSITION
+        ↓
+HORIZONTAL SKETCHBOOK
+←────────────────────────────→
+ Sketch 1 → Sketch 2 → Sketch 3 → ...
+```
+
+The visitor should be able to see and explore the artwork horizontally.
+
+## Visual direction
+
+Possible elements:
+
+- Sketchbook pages
+- Paper textures
+- Carbon-copy effect
+- Pencil marks
+- Page shadows
+- Handwritten labels
+- Page flipping
+- Horizontal drag
+- Scroll-linked movement
+- Small metadata/date/title labels
+
+The final visual implementation will be planned separately.
+
+## Important
+
+The art section should feel **artistic and personal**, while still belonging to the space/gamified universe.
+
+---
+
+# 28. CONNECT WITH ME
+
+## Section
+
+**Connect With Me**
+
+This is the final meaningful destination.
+
+It should NOT be a conventional contact form unless one is later deemed necessary.
+
+## Required links
+
+Exactly these four primary social/contact destinations:
+
+1. Instagram
+2. GitHub
+3. LinkedIn
+4. Email
+
+## Presentation
+
+Make the links feel like game-world portals/communication channels.
+
+Possible concepts:
+
+- Communication console
+- Signal channels
+- Transmission panel
+- Planet-to-planet communication
+- Mission control
+
+Each should have:
+
+- recognizable icon
+- label
+- hover/tap interaction
+- external-link behavior where applicable
+
+---
+
+# 29. NO CONVENTIONAL FOOTER
+
+There should be **no traditional portfolio footer**.
+
+Avoid standard:
+
+```text
+© 2026 Sandhiya
+Made with React
+Privacy
+Terms
+```
+
+style footer treatment unless technically required.
+
+Instead, the Connect With Me section should serve as the ending of the experience.
+
+The page can end with a small in-universe visual/message, for example:
+
+> **Transmission complete.**
+
+or another suitable game-style ending.
+
+The exact ending copy is not final.
+
+---
+
+# 30. INTERACTION REQUIREMENTS
+
+The website must be interactive from beginning to end.
+
+Examples of interactions to explore:
+
+- Loading animation
+- Animated character
+- Game-menu navigation
+- Hover states
+- Click feedback
+- Scroll-linked animations
+- Parallax
+- Section transitions
+- Animated project cards
+- Project detail overlays
+- Skill interactions
+- Map path animation
+- Achievement unlock animation
+- Certification card interaction
+- Horizontal art scrolling
+- Social/contact interactions
+
+Interactions should feel intentional.
+
+Do not add animation simply because it is possible.
+
+---
+
+# 31. ANIMATION LANGUAGE
+
+The animation system should have a consistent visual language.
+
+Possible motion characteristics:
+
+- Smooth
+- Slightly playful
+- Sci-fi
+- Game-like
+- Responsive
+- Cinematic at major transitions
+- Subtle for text
+- More expressive for major scene changes
+
+Avoid excessive motion that hurts readability or performance.
+
+Respect reduced-motion accessibility preferences.
+
+---
+
+# 32. RESPONSIVENESS
+
+The portfolio must work across:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+The gamified concept must survive mobile layouts.
+
+Important:
+
+The map/path experience must have a mobile-friendly alternative.
+
+The horizontal art section must remain usable on touch screens.
+
+The game menu must not become an awkward desktop UI squeezed into mobile.
+
+---
+
+# 33. RECRUITER-FRIENDLY DESIGN
+
+Although the portfolio is heavily gamified, it must still be easy for a recruiter to understand.
+
+A recruiter should be able to quickly find:
+
+- Who Sandhiya is
+- Computer Science student identity
+- Skills
+- Experience
+- Projects
+- Achievements
+- Certifications
+- Contact links
+
+Gamification should improve memorability, not hide information.
+
+Every major interactive element should have a clear fallback/readable state.
+
+---
+
+# 34. CONTENT WRITING RULES
+
+The writing style is a major requirement.
+
+## Preserve the old portfolio's voice
+
+The text should feel:
+
+- Personal
+- Curated
+- Conversational
+- Readable
+- Slightly playful
+- Thoughtful
+
+## Avoid
+
+- Generic AI-generated bios
+- Corporate buzzword-heavy paragraphs
+- Huge text blocks
+- Repeating "passionate" everywhere
+- Empty phrases such as "results-driven professional"
+- Turning every section into resume bullets
+
+## Preferred structure
+
+Use:
+
+- Short paragraphs
+- Line breaks
+- Micro-copy
+- Small captions
+- Short descriptions
+- Storytelling
+
+The portfolio should sound like Sandhiya, not like a job-description generator.
+
+---
+
+# 35. INFORMATION HIERARCHY
+
+The portfolio should communicate information in this approximate priority:
+
+### Highest priority
+
+- Identity
+- About
+- Projects
+- Experience
+- Skills
+
+### Strong supporting content
+
+- Achievements
+- Certifications
+
+### Personality
+
+- NCC
+- Art
+- Extracurricular interests
+
+### Final action
+
+- Connect With Me
+
+---
+
+# 36. CURRENT CONTENT SNAPSHOT
+
+## Identity
+
+- Sandhiya
+- Zandy
+- Computer Science / Computer Science and Engineering student
+- Zandy's Zone
+
+## Academic
+
+- Jeppiaar Engineering College
+- Computer Science and Engineering
+- CGPA information from current resume/profile can be displayed if desired
+
+## Professional Experience
+
+- SDE I Intern — NeuroStack
+- Web Development Intern — Youth United Council of India (YUCI)
+
+## Featured Projects
+
+1. ReachCraft
+2. NoteStack
+3. NeuroCopilot
+4. DevCouncil AI
+
+## Skills
+
+- Python
+- JavaScript
+- HTML/CSS
+- React.js
+- Next.js
+- Tailwind CSS
+- FastAPI
+- Flask
+- AWS
+- Git
+- GitHub
+- Hugging Face
+- Vercel
+- Netlify
+
+## Certifications
+
+- Code in Place 2026 — Stanford University
+- CS50's Introduction to Artificial Intelligence with Python — Harvard University
+- NPTEL Python for Data Science — IIT Madras
+- Responsive Web Design — freeCodeCamp
+
+## Achievement
+
+- Global Rank 51–100 — HACKHAZARDS '26 | NAMESPACE Community
+
+## Personal / Extracurricular
+
+- NCC
+- Naval Wing
+- Leadership
+- Open-sea sailing
+- Best Cadet of the Camp
+- Sketching
+- Anime/cartoon art
+
+---
+
+# 37. PROVISIONAL SPA STORY
+
+This is a working structure, not a permanently locked order.
+
+```text
+LOADING
+   ↓
+UFO ARRIVES
+   ↓
+CHARACTER FALLS
+   ↓
+ENTER ZANDY'S ZONE
+   ↓
+GAME MENU
+   ↓
+LOBBY
+   ├── HERO
+   ├── ABOUT
+   └── PERSONAL / EXTRACURRICULAR
+   ↓
+SKILLS
+   ↓
+EXPERIENCE MAP
+   ├── NeuroStack
+   └── YUCI
+   ↓
+PROJECTS
+   ├── ReachCraft
+   ├── NoteStack
+   ├── NeuroCopilot
+   └── DevCouncil AI
+   ↓
+ACHIEVEMENTS / BADGES
+   ↓
+CERTIFICATIONS
+   ↓
+CARBON COPIES OF MY SKETCHBOOK
+   └── HORIZONTAL ART EXPERIENCE
+   ↓
+CONNECT WITH ME
+   ├── Instagram
+   ├── GitHub
+   ├── LinkedIn
+   └── Email
+   ↓
+END / TRANSMISSION COMPLETE
+```
+
+The exact ordering can still be refined before implementation.
+
+---
+
+# 38. DESIGN PRINCIPLE
+
+The website should NOT feel like:
+
+> "My resume converted into a game."
+
+It should feel like:
+
+> **"My portfolio happens to be a game."**
+
+The content remains professional and readable.
+
+The world around the content is what makes it gamified.
+
+---
+
+# 39. FINAL CREATIVE DIRECTION
+
+## One-line design brief
+
+> **Build Zandy's Zone as an interactive, animated, space-themed game world where the visitor explores Sandhiya's identity, skills, career path, projects, achievements, certifications, artwork, and social links.**
+
+## Experience keywords
+
+**SPACE × GAME × PERSONAL × INTERACTIVE × ANIMATED × DEVELOPER × ART**
+
+## Non-negotiables
+
+- [x] Computer Science student identity
+- [x] SPA
+- [x] Space-colored theme
+- [x] Gamified experience
+- [x] Animated loading screen
+- [x] UFO + falling character loading sequence
+- [x] Game-menu navigation
+- [x] Lobby instead of Home
+- [x] Animated Hero
+- [x] About Me
+- [x] Extracurricular/personal content
+- [x] Skills
+- [x] Experience as a map/path
+- [x] NeuroStack experience
+- [x] YUCI experience
+- [x] Four featured projects
+- [x] Project image areas
+- [x] Live-link icons
+- [x] GitHub/source icons where applicable
+- [x] Gamified achievements
+- [x] Certifications
+- [x] Certificate view icons
+- [x] "Carbon Copies of My Sketchbook"
+- [x] Horizontal art transition/scroll
+- [x] Connect With Me
+- [x] Instagram
+- [x] GitHub
+- [x] LinkedIn
+- [x] Email
+- [x] No conventional footer
+- [x] Personal writing style
+- [x] Interactive + animated throughout
+- [x] Recruiter-friendly usability
+
+---
+
+# 40. WHAT SHOULD NOT BE FINALIZED YET
+
+The following should remain open until the next design stage:
+
+- Exact color hex values
+- Exact typography
+- Exact game genre/style
+- Final gamified names for Experience/Achievements/Skills
+- Exact UFO design
+- Exact character design
+- Final Hero copy
+- Final About copy
+- Final section ordering
+- Exact map layout
+- Exact project card layout
+- Exact art/sketchbook interaction
+- Exact animation library/implementation approach
+- Exact social URLs
+- Final URLs for live projects/certificates
+- The remaining two achievement entries, unless the full resume confirms them
+- Whether additional project architecture visuals are needed
+
+Do not invent missing information when implementing these.
+
+---
+
+# END STATE
+
+The finished portfolio should make a visitor think:
+
+> **"I came here to look at a portfolio, but I ended up exploring a little universe."**
+
+And when the exploration ends:
+
+> **"I remember who Zandy is."**

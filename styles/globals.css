@@ -7,7 +7,113 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Eudoxus Sans", sans-serif;
+}
+
+/* scroll-behavior belongs on the scrolling element, not on every box. On `*`
+   it also applied to nested scroll containers and ignored reduced motion. */
+html {
   scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* The page has no business scrolling sideways. `overflow-hidden` lives on a
+   div inside pages/index.js, which never guarded the document itself, so any
+   element wider than the viewport opened a scrollable strip of empty space. */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Shared surfaces for the projects, certificate and stack sections.
+   Hairline borders and a flat wash — no drop shadows, so the panels sit in
+   the page rather than floating above it. */
+.zz-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.zz-card:hover,
+.zz-card:focus-within {
+  border-color: rgba(147, 197, 253, 0.45);
+}
+
+/* Screenshots sit in a minimal window frame carrying the live domain, so the
+   image reads as a running product rather than a floating picture. */
+.zz-frame {
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.zz-frame:hover {
+  border-color: rgba(147, 197, 253, 0.5);
+  transform: translateY(-3px);
+}
+
+.zz-frame__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.55rem 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 13px;
+  color: #c7c7c7;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .zz-frame,
+  .zz-card,
+  .zz-row {
+    transition: none;
+  }
+  .zz-frame:hover {
+    transform: none;
+  }
+}
+
+/* One technology per token, so a stack of fourteen stays scannable. */
+.zz-chip {
+  /* inline-flex lives here, not as a utility: this rule is defined after
+     @tailwind utilities, so a `display` utility on the element would lose. */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #c7c7c7;
+  white-space: nowrap;
+}
+
+.zz-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  transition: background 0.2s ease;
+}
+
+.zz-row:hover {
+  background: rgba(255, 255, 255, 0.035);
+}
+
+:focus-visible {
+  outline: 2px solid #93c5fd;
+  outline-offset: 3px;
+  border-radius: 6px;
 }
 
 .gradient-01 {

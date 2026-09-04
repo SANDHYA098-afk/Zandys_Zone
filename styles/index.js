@@ -1,23 +1,28 @@
+// Mobile first: the bare utility is the phone value, each breakpoint scales up.
+// `xs` is 480px (defined in tailwind.config.js), `sm` is 640px.
 const styles = {
-  innerWidth: '2xl:max-w-[1280px] w-full',
-  interWidth: 'lg:w-[80%] w-[100%]',
+  innerWidth: 'w-full 2xl:max-w-[1280px]',
+  interWidth: 'w-[100%] lg:w-[80%]',
 
-  paddings: 'sm:p-16 xs:p-8 px-6 py-12',
-  yPaddings: 'sm:py-16 xs:py-8 py-12',
-  xPaddings: 'sm:px-16 px-6',
-  topPaddings: 'sm:pt-16 xs:pt-8 pt-12',
-  bottomPaddings: 'sm:pb-16 xs:pb-8 pb-12',
+  paddings: 'px-6 py-10 xs:px-8 xs:py-12 sm:p-16',
+  yPaddings: 'py-10 xs:py-12 sm:py-16',
+  xPaddings: 'px-6 xs:px-8 sm:px-16',
+  topPaddings: 'pt-10 xs:pt-12 sm:pt-16',
+  bottomPaddings: 'pb-10 xs:pb-12 sm:pb-16',
 
   flexCenter: 'flex justify-center items-center',
   flexStart: 'flex justify-start items-start',
   flexEnd: 'flex justify-end',
   navPadding: 'pt-[98px]',
 
-  // hero section
-  heroHeading:
-      'font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white',
+  // Hero wordmark, sized fluidly rather than in breakpoint steps. Stepped
+  // sizes overflow at in-between widths — the viewport grows but the type is
+  // still set for the previous step. 10.5vw keeps "PORTFOLIO" at roughly 59%
+  // of the viewport at every width, so it can never push the page sideways.
+  heroHeading: 'font-bold uppercase text-white text-[clamp(2rem,10.5vw,9rem)] leading-[1.06]',
+  // The D-block tracks the heading: 1.47em wide, 0.75em tall, 0.125em border.
   heroDText:
-      'md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]',
+    'w-[clamp(2.95rem,15.4vw,13.25rem)] h-[clamp(1.5rem,7.9vw,6.75rem)] border-[clamp(4px,1.3vw,18px)] rounded-r-[50px] border-white mx-[6px] sm:mx-2',
 };
 
 export default styles;

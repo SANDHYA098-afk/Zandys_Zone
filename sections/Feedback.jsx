@@ -1,96 +1,115 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import styles from '../styles';
-import { staggerContainer, fadeIn, zoomIn } from '../utils/motion';
 
+import { TypingText, TitleText } from '../components';
+
+import styles from '../styles';
+import { staggerContainer, fadeIn } from '../utils/motion';
+import { certifications, techStack } from '../constants';
+
+// Blue means it goes somewhere; violet is a label and never clickable.
+const ExternalArrow = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="w-4 h-4 shrink-0"
+    aria-hidden="true"
+  >
+    <path d="M7 17 17 7" />
+    <path d="M8 7h9v9" />
+  </svg>
+);
+
+// col-reverse puts the Learning Stack above the certificates on phones, while
+// the row at lg keeps certificates on the left and the stack on the right.
 const Feedback = () => (
-  <section className={`${styles.paddings} relative z-10`} >
+  <section className={`${styles.paddings} relative z-10`} id="stack">
     <motion.div
-      variants={staggerContainer}
+      variants={staggerContainer(0.1, 0.1)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col lg:flex-row gap-6`}
+      viewport={{ once: true, amount: 0.15 }}
+      className={`${styles.innerWidth} mx-auto flex flex-col-reverse lg:flex-row gap-5 sm:gap-6`}
+    >
+      {/* Credentials */}
+      <motion.div
+        variants={fadeIn('right', 'tween', 0.2, 0.7)}
+        className="zz-card relative flex-1 p-6 sm:p-8 overflow-hidden"
       >
+        <div className="feedback-gradient pointer-events-none z-0" />
 
-        <motion.div
-          variants={fadeIn('right', 'tween', 0.2, 1)}
-          className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6a6a6a] relative">
+        <div className="relative z-10">
+          <TypingText title="| My Certificates" />
+          <TitleText
+            title={<>Coursework / Certifications</>}
+            textStyles="!text-[28px] sm:!text-[36px]"
+          />
 
-            <div className="feedback-gradient pointer-events-none z-0" />
-
-            <div className="text-left z-10">
-
-            <p className="mt-[10px] lg:text-[16px] text-[14px] leading-[16px] sm:leading-[22px] font-normal text-white">| My Certificates</p>
-              <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40px] leading-[36px] text-white mb-[155px] mt-[10px]">Coursework</h4>
-             
-            
-
-            <p className="mt-[24px] lg:text-[18px] text-[12px] font-bold text-white">
-               ~ Harvard's cs50AI </p>
-
-                <a className="text-blue relative z-20 inline-block cursor-pointer hover:underline" href="https://cs50.harvard.edu/certificates/4d3724e7-cd63-4b46-8b19-47285ae1269d" target="_blank" rel="noopener noreferrer">|LINK|</a>
-
-            <p className="mt-[24px] lg:text-[18px] text-[12px] font-bold text-white">
-              ~ Responsive Web Design by freeCodeCamp
-            </p>
-
-             <a className="text-blue relative z-20 inline-block cursor-pointer hover:underline" href="https://freecodecamp.org/certification/sandy0102/responsive-web-design" target="_blank" rel="noopener noreferrer">|LINK|</a>
-
-            <p className="mt-[24px] lg:text-[18px] text-[12px] font-bold text-white">
-              ~ HackerRank Python (Basic)
-            </p>
-
-             <a className="text-blue relative z-20 inline-block cursor-pointer hover:underline" href="https://www.hackerrank.com/certificates/iframe/4d0468d16ddc" target="_blank" rel="noopener noreferrer">|LINK|</a>
-
-            </div>
-            
-
-        </motion.div>
-
-        <motion.div
-          variants={fadeIn('left', 'tween', 0.2, 1)}
-          className="relative flex-1 flex justify-center items-center border-[1px] border-[#6a6a6a] rounded-[32px]">
-
-             <div className="feedback-gradient pointer-events-none z-0" />
-
-          
-
-           
-
-            <motion.div
-            variants={zoomIn(0.4, 1)}
-            className="lg:block hidden absolute -left-[10%] top-[3%]">
-
-              <img src="/newStamp2.png" alt="stamp" className="w-[155px] h-[155px] object-contain" />
-
-            </motion.div>
-
-             <div className="text-right flex-col md:flex-row gap-4 justify-between px-10 py-10 z-10">
-
-            <p className="mt-[10px] lg:text-[16px] text-[14px] leading-[16px] sm:leading-[22px] font-normal text-white">| Exploring and building with</p>
-              <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40px] leading-[36px] text-white mb-[105px] mt-[10px]">Learning Stack</h4>
-             
-
-              <h5 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40px] leading-[36px] text-white ">Languages & Frameworks</h5>
-               <p className="mt-[10px] lg:text-[16px] text-[14px] leading-[16px] sm:leading-[22px] font-normal text-white">Python • HTML • CSS • Bootstrap • JavaScript • Tailwind CSS • React.js • Next.js • Flask</p>
-
-               <h5 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40px] leading-[36px] text-white mt-[20px] ">Data & AI</h5>
-               <p className="mt-[10px] lg:text-[16px] text-[14px] leading-[16px] sm:leading-[22px] font-normal text-white mb-[5px]">Pandas • NumPy • Matplotlib • TensorFlow • Streamlit</p>
-
-               <h5 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40px] leading-[36px] text-white mt-[20px] ">Tools & Platforms</h5>
-               <p className="mt-[10px] lg:text-[16px] text-[14px] leading-[16px] sm:leading-[22px] font-normal text-white mb-[5px]">Canva • VS Code • Jupyter Notebook • PyCharm • Netlify • Git • GitHub</p>
-
-
-
-
-
-            </div>
-        </motion.div>
-
+          <ul className="mt-8">
+            {certifications.map((cert) => (
+              <li key={cert.name} className="zz-row">
+                <a
+                  href={cert.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start justify-between gap-4 py-4 px-2 -mx-2 text-blue-300 hover:text-white"
+                >
+                  <span>
+                    <span className="block font-semibold text-[16px] sm:text-[17px] leading-snug text-white">
+                      {cert.name}
+                    </span>
+                    <span className="block mt-1 text-[14px] text-secondary-white">
+                      {cert.issuer}
+                    </span>
+                  </span>
+                  <span className="flex items-center gap-1.5 pt-0.5 text-[13px] font-semibold whitespace-nowrap">
+                    View
+                    <ExternalArrow />
+                  </span>
+                  <span className="sr-only">certificate, opens in a new tab</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </motion.div>
 
+      {/* Stack */}
+      <motion.div
+        variants={fadeIn('left', 'tween', 0.2, 0.7)}
+        className="zz-card relative flex-1 p-6 sm:p-8 overflow-hidden"
+      >
+        <div className="feedback-gradient pointer-events-none z-0" />
+
+        <div className="relative z-10">
+          <TypingText title="| Exploring and building with" />
+          <TitleText title={<>Learning Stack</>} textStyles="!text-[28px] sm:!text-[36px]" />
+
+          <div className="mt-8 flex flex-col gap-6">
+            {techStack.map((group) => (
+              <div key={group.group}>
+                <h4 className="text-[14px] font-semibold tracking-wide text-[#a78bfa]">
+                  {group.group}
+                </h4>
+                <ul className="mt-3 flex flex-wrap gap-2">
+                  {group.items.map((item) => (
+                    <li key={item.name} className="zz-chip">
+                      <img src={item.icon} alt="" width={16} height={16} className="w-4 h-4 shrink-0" />
+                      {item.name}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </motion.div>
+    </motion.div>
   </section>
 );
 
